@@ -14,14 +14,14 @@
 
     <div id="main">
       <!-- Menu -->
-        <div class="container">
+        <div class="responsive-nav">
 
           <i id="toggle-icon" class="fa fa-bars"></i>
 
           <div id="menu">
             <i id="menu-close" class="fa fa-times"></i>
 
-            <div>
+            <div class="container">
             
               <div class="image">
                 <a href="#">
@@ -35,18 +35,18 @@
               </div>
 
               <nav class="main-nav">
-                <ul class="nav-items">
-                  <li class="li-items">
-                    <a class="a-items" href="#">A propos</a>
+                <ul class="main-menu">
+                  <li>
+                    <a href="#section-1" class="items-scroll-to">A propos</a>
                   </li>
-                  <li class="li-items">
-                    <a class="a-items" href="#">Ce que je fais</a>
+                  <li>
+                    <a href="#section-2" class="items-scroll-to">Ce que je fais</a>
                   </li>
-                  <li class="li-items">
-                    <a class="a-items" href="#">Mes réalisations</a>
+                  <li>
+                    <a href="#section-3" class="items-scroll-to">Mes réalisations</a>
                   </li>
-                  <li class="li-items">
-                    <a class="a-items" href="#">Contactez Moi</a>
+                  <li>
+                    <a href="#section-4" class="items-scroll-to">Contactez Moi</a>
                   </li>
                 </ul>
               </nav>
@@ -81,12 +81,15 @@
               </div> <!-- Fin liste icone réseaux -->
               <div class="copyright">
                 <p>Copyright 2020 Maxime</p>
+
+                <label for="animation">Voulez-vous animer le site ?</label>
+                <input type="checkbox" id="animation" name="animation" value="0">
               </div>
             </div>
           </div>
         </div>
 
-        <section class="section" data-section="section1">
+        <section class="section" id="section-1">
           <div class="container">
             <div class="section-head">
               <h2 class="title-section">A propos</h2>
@@ -142,7 +145,7 @@
           </div>
         </section>
 
-        <section class="section" data-section="section2"> <!-- Section 2 -->
+        <section class="section" id="section-2"> <!-- Section 2 -->
           <div class="container">
             <div class="section-head"> <!-- Conteneur pour l'en-tête de la section -->
               <h2 class="title-section">Ce que je fais</h2>
@@ -151,36 +154,37 @@
                 Essayez de le reproduire le plus fidèlement possible.
                 Bonne chance. PS: des Dolipranes sont disponibles près des issues de secours.</span>
             </div> <!-- Fin en-tête de la section 2 -->
-            <div> <!-- Div qui contient le conteneur des carrés -->
-              <div>
-                <div> <!-- Le carré en lui-même -->
-                  <div></div> <!-- Block pour l'icone -->
-                  <h4>HTML5 & CSS3</h4>
-                  <p>Voici un joli petit entraînement pour l'évaluation de Vendredi.
+
+            <div class="row"> <!-- Div qui contient le conteneur des carrés -->
+              <div class="col-md-6">
+                <div class="block-animate"> <!-- Le carré en lui-même -->
+                  <div class="img-block img-1" style="height: 70px; width: 70px;"></div> <!-- Block pour l'icone -->
+                  <h4 class="title-block">HTML5 & CSS3</h4>
+                  <p class="p-block">Voici un joli petit entraînement pour l'évaluation de Vendredi.
                     Essayez de le reproduire le plus fidèlement possible.</p>
                 </div>
               </div>
-              <div>
-                <div>
-                  <div></div> <!-- Block pour l'icone -->
-                  <h4>HTML5 & CSS3</h4>
-                  <p>Voici un joli petit entraînement pour l'évaluation de Vendredi.
+              <div class="col-md-6">
+                <div class="block-animate">
+                  <div class="img-block img-2" style="height: 70px; width: 70px;"></div> <!-- Block pour l'icone -->
+                  <h4 class="title-block">HTML5 & CSS3</h4>
+                  <p class="p-block">Voici un joli petit entraînement pour l'évaluation de Vendredi.
                     Essayez de le reproduire le plus fidèlement possible.</p>
                 </div>
               </div>
-              <div>
-                <div>
-                  <div></div> <!-- Block pour l'icone -->
-                  <h4>HTML5 & CSS3</h4>
-                  <p>Voici un joli petit entraînement pour l'évaluation de Vendredi.
+              <div class="col-md-6">
+                <div class="block-animate">
+                  <div class="img-block img-3" style="height: 70px; width: 70px;"></div> <!-- Block pour l'icone -->
+                  <h4 class="title-block">HTML5 & CSS3</h4>
+                  <p class="p-block">Voici un joli petit entraînement pour l'évaluation de Vendredi.
                     Essayez de le reproduire le plus fidèlement possible.</p>
                 </div>
               </div>
-              <div>
-                <div>
-                  <div></div> <!-- Block pour l'icone -->
-                  <h4>HTML5 & CSS3</h4>
-                  <p>Voici un joli petit entraînement pour l'évaluation de Vendredi.
+              <div class="col-md-6">
+                <div class="block-animate">
+                  <div class="img-block img-4" style="height: 70px; width: 70px;"></div> <!-- Block pour l'icone -->
+                  <h4 class="title-block">HTML5 & CSS3</h4>
+                  <p class="p-block">Voici un joli petit entraînement pour l'évaluation de Vendredi.
                     Essayez de le reproduire le plus fidèlement possible.</p>
                 </div>
               </div>
@@ -188,7 +192,7 @@
           </div>
         </section>
 
-        <section class="section" data-section="section3"> <!-- Section 3 -->
+        <section class="section" id="section-3"> <!-- Section 3 -->
           <div class="container">
             <div class="section-head"> <!-- Conteneur pour l'en-tête de la section -->
               <h2 class="title-section">Mes réalisations</h2>
@@ -217,8 +221,8 @@
                     <span>Animals</span>
                   </label>
                 </form>
-                <div class="isotope-box">
-                  <div class="isotope-item" data-type="nature">
+                <div class="isotope-box row">
+                  <div class="isotope-item col-md-6" data-type="nature">
                     <figure>
                       <img src="assets/images/portfolio-01.jpg" alt="Photo portfolio 1">
                       <figcaption>
@@ -230,7 +234,7 @@
                       </figcaption>
                     </figure>
                   </div>
-                  <div class="isotope-item" data-type="people">
+                  <div class="isotope-item col-md-6" data-type="people">
                     <figure>
                       <img src="assets/images/portfolio-02.jpg" alt="Photo portfolio 2">
                       <figcaption>
@@ -242,7 +246,7 @@
                       </figcaption>
                     </figure>
                   </div>
-                  <div class="isotope-item" data-type="animals">
+                  <div class="isotope-item col-md-6" data-type="animals">
                     <figure>
                       <img src="assets/images/portfolio-03.jpg" alt="Photo portfolio 3">
                       <figcaption>
@@ -254,7 +258,7 @@
                       </figcaption>
                     </figure>
                   </div>
-                  <div class="isotope-item" data-type="people">
+                  <div class="isotope-item col-md-6" data-type="people">
                     <figure>
                       <img src="assets/images/portfolio-04.jpg" alt="Photo portfolio 4">
                       <figcaption>
@@ -266,7 +270,7 @@
                       </figcaption>
                     </figure>
                   </div>
-                  <div class="isotope-item" data-type="nature">
+                  <div class="isotope-item col-md-6" data-type="nature">
                     <figure>
                       <img src="assets/images/portfolio-05.jpg" alt="Photo portfolio 5">
                       <figcaption>
@@ -278,7 +282,7 @@
                       </figcaption>
                     </figure>
                   </div>
-                  <div class="isotope-item" data-type="animals">
+                  <div class="isotope-item col-md-6" data-type="animals">
                     <figure>
                       <img src="assets/images/portfolio-06.jpg" alt="Photo portfolio 6">
                       <figcaption>
@@ -296,7 +300,7 @@
           </div>
         </section>
 
-        <section class="section" data-section="section4"> <!-- Section 4 -->
+        <section class="section" id="section-4"> <!-- Section 4 -->
           <div class="container">
             <div class="section-head"> <!-- Conteneur pour l'en-tête de la section -->
               <h2 class="title-section">Contactez Moi</h2>

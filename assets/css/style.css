@@ -1,5 +1,9 @@
+@import url(fontawesome.css);
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
 * {
     color: white;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -22,10 +26,12 @@ img {
     background-color: #a43f49;
     min-width: 45px;
     max-width: 80vw;
-    height: 100vh;
+    height: 90vh;
     max-height: 100vh;
     position: fixed;
     text-align: center;
+
+    margin: 0 auto;
 
     width: 20%;
     left: 10%;
@@ -65,6 +71,10 @@ img {
 }
 
 /* sidebar nav */
+
+ul {
+    padding-inline-start: 0px;
+}
 
 li > a {
     text-decoration: none !important;
@@ -141,7 +151,6 @@ li > a:hover {
     width: 100%;
     height: 60px;
     line-height: 60px;
-
 }
 
 /* all sections */
@@ -224,4 +233,96 @@ li > a:hover {
 .left-text,
 .right-text {
     margin-top: 50px;
+}
+
+/* second section */
+
+.block-animate {
+    width: 450px;
+    height: 350px;
+
+    padding: 50px;
+    margin-bottom: 20px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.5s;
+
+}
+
+.block-animate > h4 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.block-animate:hover .title-block {
+    color: black;
+}
+
+.block-animate > p {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+}
+
+.block-animate:hover .p-block {
+    color: grey;
+    font-weight: 500;
+}
+
+.block-animate:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.img-1 {
+    background-image: url(../images/first-white-icon.png);
+}
+
+.block-animate:hover .img-1 {
+    background-image: url(../images/first-main-icon.png);
+}
+
+.img-2 {
+    background-image: url(../images/second-white-icon.png);
+}
+
+.block-animate:hover .img-2 {
+    background-image: url(../images/second-main-icon.png);
+}
+
+.img-3 {
+    background-image: url(../images/third-white-icon.png);
+}
+
+.block-animate:hover .img-3 {
+    background-image: url(../images/third-main-icon.png);
+}
+
+.img-4 {
+    background-image: url(../images/fourth-white-icon.png);
+}
+
+.block-animate:hover .img-4 {
+    background-image: url(../images/fourth-main-icon.png);
+}
+
+.img-block {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: auto;
+    height: auto;
+
+    margin-bottom: 45px;
+}
+
+/* third section layout */
+
+figure > img {
+    border-radius: 5px;
+}
+
+figure {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.1);
 }
