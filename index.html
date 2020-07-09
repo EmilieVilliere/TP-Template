@@ -13,6 +13,8 @@
   <body>
 
     <div id="main">
+
+      <a id="top" class="top"></a>
       <!-- Menu -->
         <div class="responsive-nav">
 
@@ -34,18 +36,18 @@
                 <span>Web Designer</span>
               </div>
 
-              <nav class="main-nav">
+              <nav id="sidebar" class="main-nav">
                 <ul class="main-menu">
-                  <li>
+                  <li id="sec1">
                     <a href="#section-1" class="items-scroll-to">A propos</a>
                   </li>
-                  <li>
+                  <li id="sec2">
                     <a href="#section-2" class="items-scroll-to">Ce que je fais</a>
                   </li>
-                  <li>
+                  <li id="sec3">
                     <a href="#section-3" class="items-scroll-to">Mes réalisations</a>
                   </li>
-                  <li>
+                  <li id="sec4">
                     <a href="#section-4" class="items-scroll-to">Contactez Moi</a>
                   </li>
                 </ul>
@@ -83,7 +85,10 @@
                 <p>Copyright 2020 Maxime</p>
 
                 <label for="animation">Voulez-vous animer le site ?</label>
-                <input type="checkbox" id="animation" name="animation" value="0">
+                <input type="checkbox" id="animation" name="animation" onchange="animate();">
+
+                <label for="palet">Voulez-vous changer de couleur ?</label>
+                <input type="color" id="palet" name="palet" value="#a43f49" onchange="color();">
               </div>
             </div>
           </div>
@@ -191,6 +196,9 @@
             </div>
           </div>
         </section>
+
+        <!-- ancre de retour haut de page -->
+        <a href="#top"><div class="backtop" id="arrow" style="height: 70px; width: 70px;"></div></a>
 
         <section class="section" id="section-3"> <!-- Section 3 -->
           <div class="container">
@@ -313,8 +321,8 @@
               <div>
                 <div>
                   <form action="" method="post">
-                    <div>
-                      <div>
+                    <div id="contact" class="row">
+                      <div class="col-md-6">
                         <fieldset>
                           <input
                             type="text"
@@ -325,7 +333,7 @@
                             required />
                         </fieldset>
                       </div>
-                      <div>
+                      <div class="col-md-6">
                         <fieldset>
                           <input
                             type="text"
@@ -336,7 +344,7 @@
                             required />
                         </fieldset>
                       </div>
-                      <div>
+                      <div class="col-md-12">
                         <fieldset>
                           <input
                             type="text"
@@ -347,7 +355,7 @@
                             required />
                         </fieldset>
                       </div>
-                      <div>
+                      <div class="col-md-12">
                         <fieldset>
                           <textarea
                             name="message"
@@ -358,9 +366,9 @@
                             required></textarea>
                         </fieldset>
                       </div>
-                      <div>
+                      <div class="col-md-12">
                         <fieldset>
-                          <button class="white-button" type="submit" id="form-submit">Envoyer</button>
+                          <button class="ctct-btn" type="submit" id="form-submit">Envoyer le message</button>
                         </fieldset>
                       </div>
                     </div>
