@@ -1,5 +1,4 @@
 //button animation
-
 function scrollNav() { //fonction d'animation du scroll
     jQuery(document).ready(function($) {
         $(".items-scroll-to").click(function(event) { // au click sur les items de nav
